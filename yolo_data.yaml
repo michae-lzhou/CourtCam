@@ -1,5 +1,5 @@
-train: dataset/train
-val: dataset/val
+train: yolo_dataset/train
+val: yolo_dataset/val
 nc: 1  # Number of classes (Basketball = 1, Hoop = 2, Player = 3)
 names: [ "Basketball" ]
 # names: [ "Basketball", "Hoop", "Player" ]

@@ -5,17 +5,18 @@ import os
 script_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(script_dir)
 
-model = YOLO("yolov5n.yaml")
+model = YOLO("yolov8m.yaml")
+# model = YOLO("yolo_dataset/checkpoints/medium-Model/weights/best.pt")
 data_yaml_path = os.path.join(script_dir, "data.yaml")
 
 # Train the model with explicit dataset path
 results = model.train(
     data=data_yaml_path,
-    epochs=100,
+    epochs=500,
     project="dataset/checkpoints",
-    name="small-Model",
-    batch=32,
-    device="cpu",
+    name="bhp_medium_model",
+    batch=64,
+    device="0",
     patience=40,
     imgsz=640,
     verbose=True,
