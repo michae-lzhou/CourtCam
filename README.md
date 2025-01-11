@@ -1,8 +1,8 @@
 # CourtCam
 
-Ever dreamed of never touching your tripod again during your son/daughter's basketball game, but still want to capture all of the action? Introducing **CourtCam**, a simple, cross-platform Python-based application designed to automatically detect and track basketballs in video footage. With the power of computer vision and machine learning, it processes game footage to provide enhanced video capture, ensuring that you never miss a shot — all without needing to adjust your camera manually.
+Ever dreamed of never touching your tripod again during your son/daughter's basketball game, but still want to capture all of the action? Introducing **CourtCam**, a simple, cross-platform Python-based application designed to automatically detect and track action in video footage. With the power of computer vision and machine learning, it processes game footage to provide enhanced video capture, ensuring that you never miss a shot — all without needing to adjust your camera manually.
 
-Simply record your child's basketball game on a tripod with a 0.5 ultra-wide lens shot, place the .mp4 file in the same folder, and right-click on `run_tracking.sh` to "Run as a Program." The application will take care of the rest.
+Simply **(1)** record your child's basketball game on a tripod with a 0.5 ultra-wide lens shot from mid-court, **(2)** place the .mp4 file in the same folder, and **(3)** right-click on `run_tracking.sh` to "Run as a Program." The application will take care of the rest.
 
 ## Why Should You Use It?
 
@@ -17,18 +17,25 @@ Simply record your child's basketball game on a tripod with a 0.5 ultra-wide len
 
 To analyze a basketball game video, follow these steps:
 
-1. Ensure that your **CourtCam** folder contains the following:
+1. Clone the Repository in Terminal
+
+    ```bash
+    git clone https://github.com/michae-lzhou/bball-game-analyst.git
+    ```
+    
+2. (Optional) Follow the installation guide below to set up dependencies
+3. Ensure that your **CourtCam** folder contains the following:
    - `bball_game_tracking` folder
    - `run_tracking.sh`
    - `[INPUT_VIDEO.mp4]`
    
-2. Drag your video into the folder.
+4. Drag your video into the folder.
 
-3. Right-click on **run_tracking.sh** and select **"Run as a Program"**.
+5. Right-click on **run_tracking.sh** and select **"Run as a Program"**.
 
-4. Follow the instructions in the pop-up menu and terminal to initiate the program.
+6. Follow the instructions in the pop-up menu and terminal to initiate the program.
 
-5. Ensure there is only one `.mp4` file in the folder at a time for optimal performance.
+7. Ensure there is only one `.mp4` file in the folder at a time for optimal performance.
 
 **Note:** You can exit the program at any time by pressing `CTRL-C` a couple of times. However, please note that doing so may lead to unintended consequences.
 
@@ -39,26 +46,19 @@ To analyze a basketball game video, follow these steps:
 - Python 3.6+
 - Pip (Python package manager)
 
-### Steps
-
-1. **Clone the Repository in Terminal**
-    ```bash
-    git clone https://github.com/michae-lzhou/bball-game-analyst.git
-    ```
-
-2. **Install Dependencies**
-    It is recommended to use a virtual environment. You can set it up as follows:
+**Install Dependencies**
+1.  It is recommended to use a virtual environment. You can set it up as follows:
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
 
-    Install the required dependencies (Optional: Handled when ran):
+ 2. Install the required dependencies (Optional: Handled when ran):
     ```bash
     pip install -r bball_game_tracking/requirements.txt
     ```
 
-    Primary Libraries Used:
+**Primary Libraries Used:**
     - Ultralytics (YOLO)
     - OpenCV
     - NumPy
@@ -67,7 +67,6 @@ To analyze a basketball game video, follow these steps:
 ## Features
 
 - **Basketball Tracking**: Automatically detects and tracks basketballs in real-time using a YOLO-based object detection model.
-- **Clustering**: Groups detected basketballs using DBSCAN clustering, ensuring that all basketballs are accurately tracked, even in crowded scenes.
 - **Frame Cropping**: Crops video frames around the detected basketballs for a more focused and engaging viewing experience.
 - **Video Processing**: Generates output videos with real-time tracking and enhanced frames.
 - **Super Resolution (Coming Soon)**: Smoothens video playback and increases video quality from HD to 4k with AI.
@@ -76,7 +75,7 @@ To analyze a basketball game video, follow these steps:
 
 ### Basketball Game Tracker Performance
 
-Basketball Game Tracker leverages deep learning to provide an automatic tracking solution for basketball games, simulating dynamic camera panning from a wide-angle shot at half-court. This allows parents to focus on their child's performance without missing any action. Please note that performance may vary due to limited training data.
+Please note that performance may vary due to limited training data (especially during free-throws and time-outs)
 
 ### Processing Device
 
