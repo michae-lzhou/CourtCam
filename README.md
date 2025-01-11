@@ -34,7 +34,8 @@ To analyze a basketball game video, follow these steps:
 
 3. **Prepare the CourtCam Folder**  
    Ensure that the **CourtCam** folder contains the following:  
-   - `bball_game_tracking` folder  
+   - `bball_game_tracking` folder
+   - `README.md`
    - `run_tracking.sh`  
    - `[YOUR_VIDEO.mp4]`  
 
