@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Download all of the requirements to run the program
+pip install -r bball_game_tracking/requirements.txt > /dev/null 2>&1
+
 # Find all .mp4 files in the current directory
 mp4_files=(*.mp4)
 
@@ -16,5 +20,7 @@ if [ ${#mp4_files[@]} -eq 1 ]; then
     echo "No compatible terminal found."
   fi
 else
-  echo "Please ensure there is exactly one .mp4 file in the current directory."
+  echo "Please ensure there is exactly one .mp4 file in the current directory and try again"
+  echo 'Press any key to exit'
+  read -n 1
 fi

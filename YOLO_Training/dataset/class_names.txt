@@ -1,3 +1,0 @@
-0: Basketball
-1: Hoop
-2: Player

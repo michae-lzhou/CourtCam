@@ -1,2 +1,0 @@
-1: Hoop
-2: Player

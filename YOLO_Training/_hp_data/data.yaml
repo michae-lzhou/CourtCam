@@ -1,4 +1,0 @@
-train: train
-val: val
-nc: 2
-names: [ "Hoop", "Player" ]

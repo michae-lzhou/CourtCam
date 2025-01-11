@@ -14,10 +14,12 @@ from .utils.video import create_output_video
 from .config.menu import show_configuration_menu
 
 def extract_audio(input_file, output_audio_file):
-    ffmpeg.input(input_file).output(output_audio_file, vn=None, acodec='copy').run()
+    ffmpeg.input(input_file).output(output_audio_file, vn=None, acodec='copy').global_args('-loglevel', 'error').run()
 
 def re_add_audio(input_video, input_audio, output_video):
-    ffmpeg.input(input_video).input(input_audio).output(output_video, c='copy', acodec='aac', strict='experimental').run()
+    video_stream = ffmpeg.input(input_video)
+    audio_stream = ffmpeg.input(input_audio)
+    ffmpeg.output(video_stream, audio_stream, output_video, c='copy', acodec='aac', strict='experimental').global_args('-loglevel', 'error').run()
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Process a video file.")
@@ -150,9 +152,10 @@ def main():
                        force_30fps=fast_mode)
 
     file_name_without_extension = video_file.replace('.mp4', '')
-    final_name = file_name_without_extension.split('/')[-1]
+    output_name = file_name_without_extension.split('/')[-1]
+    final_name = os.path.join('[OUT] ' + output_name + '.mp4')
 
-    re_add_audio('output.mp4', 'audio.aac', f'[MOD]{final_name}.mp4')
+    re_add_audio('output.mp4', 'audio.aac', final_name)
 
     os.remove('output.mp4')
     os.remove('audio.aac')
