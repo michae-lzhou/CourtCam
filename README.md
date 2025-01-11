@@ -92,7 +92,7 @@ Please note that performance may vary due to limited training data (especially d
 
 ### Processing Device
 
-- **GPU (~7x speed)**: For optimal performance, we recommend using a GPU, as it significantly accelerates processing time. Ensure CUDA is enabled for best results.
+- **GPU (~7x speed)**: For optimal performance, I recommend using a GPU, as it significantly accelerates processing time. Ensure CUDA is enabled for best results.
 - **CPU (~0.85x speed)**: While slower, CPU processing is universally compatible and does not require specialized hardware.
 
 ### Quality Settings
