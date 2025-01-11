@@ -30,7 +30,7 @@ To analyze a basketball game video, follow these steps:
    - **Using Git (Recommended):**  
      Open a terminal and run the following command:  
      ```bash
-     git clone https://github.com/michae-lzhou/bball-game-analyst.git
+     git clone https://github.com/michae-lzhou/CourtCam.git
      ```  
 
    - **Without Git:**  
