@@ -7,6 +7,10 @@ Simply **(1)** record your child's basketball game on a tripod with a 0.5 ultra-
 ## Demo
 
 
+https://github.com/user-attachments/assets/7a41935e-2ef5-4e78-8fb4-28db2b5c0d1b
+
+
+
 ## Why Should You Use It?
 
 - **Simple to Use**: No need for complex setup — just place the video in the folder and run the script!
