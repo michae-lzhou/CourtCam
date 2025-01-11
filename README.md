@@ -102,3 +102,22 @@ Please note that performance may vary due to limited training data (especially d
 
 ### Notes
 - If GPU processing encounters an issue, the program will automatically fall back to CPU processing, ensuring compatibility without additional configuration.
+
+
+## References
+Huge shoutouts to these amazing resources on the niche problems I was trying to solve! (That you'll also likely run into if you want to do something similar)
+
+1. **[How to Detect Basketball Game using Deep Learning](https://www.youtube.com/watch?v=i8k8YP0oy00)**
+   - By Eran Feit, this is the amazing tutorial I started with to train my YOLO models! The annotation part with GroundingDINO saved me a lot of headache and late nights drawing my own bounding boxes.
+
+2. **[How to Automatically Remove Fish-Eye(Wide Angle) Lens Distortion for Any Camera](https://www.youtube.com/watch?v=MAoQqhcKKAo)**
+   - By WalkWithMe, I didn't realize that iPhones already have built-in distortion removal when taking videos from ultra-wide lens, but this tutorial is extremely helpful for people using specialized recording devices that don't have this built-in functionality.
+
+3. **[A simple way of creating a custom object detection model](https://towardsdatascience.com/chess-rolls-or-basketball-lets-create-a-custom-object-detection-model-ef53028eac7d)**
+   - By Piotr Skalski, an end-to-end guide on building a custom object detection model with detailed steps and examples.
+
+4. **[makesense.ai](https://www.makesense.ai/)**
+   - From Reference 3, ONE OF THE BEST TOOLS I'VE USED TO HELP ME LABEL DATA. The web-interface makes everything so much easier, and the process is so streamlined for labeling your own custom data.
+  
+5. **[Extending YOLOv8 COCO Model With New Classes Without Affecting Old Weights](https://y-t-g.github.io/tutorials/yolov8n-add-classes/)**
+   - By Mohammed Yasin, although I ended up not using the merged model due to the low accuracy, but this guide is exactly what you are looking for when you want to "run two YOLO models for the price of one". Mohammed was extremely responsive too, and answered my questions completely within 12 hours.
