@@ -35,6 +35,7 @@ To analyze a basketball game video, follow these steps:
 
    - **Without Git:**  
      Navigate to the repository on GitHub, click the green **Code** button, and select **Download ZIP**. Extract the ZIP file after downloading.
+     Or click this link here to download the zip file: https://github.com/michae-lzhou/CourtCam/archive/refs/heads/main.zip
     
 2. **Set Up Dependencies (Optional)**  
    Follow the installation guide below to ensure all necessary dependencies are installed.  
