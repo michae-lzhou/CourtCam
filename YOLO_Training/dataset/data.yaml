@@ -1,0 +1,5 @@
+train: train
+val: val
+nc: 3
+names: [ "Basketball", "Hoop", "Player" ]
+weights: [20.0, 2.0, 1.0]

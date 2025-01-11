@@ -1,5 +1,0 @@
-names:
-- Basketball
-nc: 1
-train: /home/michael/Desktop/bball-game-analyst/_annotations/train/images
-val: /home/michael/Desktop/bball-game-analyst/_annotations/valid/images

@@ -1,6 +1,0 @@
-train: yolo_dataset/train
-val: yolo_dataset/val
-nc: 1  # Number of classes (Basketball = 1, Hoop = 2, Player = 3)
-names: [ "Basketball" ]
-# names: [ "Basketball", "Hoop", "Player" ]
-# weights: [0.625, 0.125, 0.25]
