@@ -1,6 +1,6 @@
+import os
 import cv2
 import ffmpeg
-import os
 import torch
 import torch.cuda
 import argparse
@@ -102,14 +102,18 @@ def run_partitioned_detection(video_path: str, model_paths: List[str],
     return all_detections
 
 def main():
+    if os.path.exists('audio.aac'):
+        os.remove('audio.aac')
+    if os.path.exists('output.mp4'):
+        os.remove('output.mp4')
     args = parse_arguments()  # Get the arguments
     video_file = args.video_file  # The path of the video file
 
-    output_audio = 'audio.aac'
-    extract_audio(video_file, output_audio)
-
     # Show configuration menu
     config = show_configuration_menu()
+
+    output_audio = 'audio.aac'
+    extract_audio(video_file, output_audio)
 
     # Set up processing based on configuration
     use_cuda = config['processing_device'] == 'GPU'
