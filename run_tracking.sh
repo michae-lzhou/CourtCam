@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Download all of the requirements to run the program
-pip install -r bball_game_tracking/requirements.txt > /dev/null 2>&1
+echo 'Installing dependencies... Just a moment (Terminal output is normal)'
+sleep 2
+pip install -r bball_game_tracking/requirements.txt # > /dev/null 2>&1
+echo 'Done!'
 
 # Find all .mp4 files in the current directory
 mp4_files=(*.mp4)
