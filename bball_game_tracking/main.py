@@ -153,7 +153,7 @@ def main():
 
     file_name_without_extension = video_file.replace('.mp4', '')
     output_name = file_name_without_extension.split('/')[-1]
-    final_name = os.path.join('[OUT] ' + output_name + '.mp4')
+    final_name = '[OUT]' + output_name + '.mp4'
 
     re_add_audio('output.mp4', 'audio.aac', final_name)
 
