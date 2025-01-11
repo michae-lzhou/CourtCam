@@ -50,7 +50,7 @@ To analyze a basketball game video, follow these steps:
 7. **Important Reminder**  
    Ensure there is only one `.mp4` file in the folder at a time to avoid conflicts.  
 
-**Note:** You can exit the program at any time by pressing `CTRL-C` a couple of times. However, please be aware that this might result in incomplete processing or corrupted outputs.
+**Note:** You can exit the program at any time by pressing `CTRL-C` a couple of times. However, please be aware that this might result in incomplete processing or corrupted outputs. Restore the folder to step 3. and try again.
 
 ## Installation
 
