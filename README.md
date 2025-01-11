@@ -17,27 +17,40 @@ Simply **(1)** record your child's basketball game on a tripod with a 0.5 ultra-
 
 To analyze a basketball game video, follow these steps:
 
-1. Clone the Repository in Terminal
+1. **Download the Repository**  
+   Choose one of the following methods to get the repository files:  
 
-    ```bash
-    git clone https://github.com/michae-lzhou/bball-game-analyst.git
-    ```
+   - **Using Git (Recommended):**  
+     Open a terminal and run the following command:  
+     ```bash
+     git clone https://github.com/michae-lzhou/bball-game-analyst.git
+     ```  
+
+   - **Without Git:**  
+     Navigate to the repository on GitHub, click the green **Code** button, and select **Download ZIP**. Extract the ZIP file after downloading.
     
-2. (Optional) Follow the installation guide below to set up dependencies
-3. Ensure that your **CourtCam** folder contains the following:
-   - `bball_game_tracking` folder
-   - `run_tracking.sh`
-   - `[YOUR_VIDEO.mp4]`
-   
-4. Drag your video into the folder.
+2. **Set Up Dependencies (Optional)**  
+   Follow the installation guide below to ensure all necessary dependencies are installed.  
 
-5. Right-click on **run_tracking.sh** and select **"Run as a Program"**.
+3. **Prepare the CourtCam Folder**  
+   Ensure that the **CourtCam** folder contains the following:  
+   - `bball_game_tracking` folder  
+   - `run_tracking.sh`  
+   - `[YOUR_VIDEO.mp4]`  
 
-6. Follow the instructions in the pop-up menu and terminal to initiate the program.
+4. **Add Your Video**  
+   Drag and drop your `.mp4` video into the **CourtCam** folder.  
 
-7. Ensure there is only one `.mp4` file in the folder at a time for optimal performance.
+5. **Run the Program**  
+   Right-click on **run_tracking.sh** and select **"Run as a Program"**.  
 
-**Note:** You can exit the program at any time by pressing `CTRL-C` a couple of times. However, please note that doing so may lead to unintended consequences.
+6. **Follow the Instructions**  
+   Complete the steps in the pop-up menu and terminal to initiate the program.  
+
+7. **Important Reminder**  
+   Ensure there is only one `.mp4` file in the folder at a time to avoid conflicts.  
+
+**Note:** You can exit the program at any time by pressing `CTRL-C` a couple of times. However, please be aware that this might result in incomplete processing or corrupted outputs.
 
 ## Installation
 
