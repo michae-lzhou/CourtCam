@@ -91,6 +91,7 @@ To analyze a basketball game video, follow these steps:
 - **Basketball Tracking**: Automatically detects and tracks basketballs and players in real-time using a YOLO-based object detection model.
 - **Frame Cropping**: Crops video frames around the desired area for a more focused and engaging viewing experience.
 - **Smooth Panning**: Utilizes weighted averages and positional history to create a smooth panning experience for the user.
+- **Artifact Exclusion**: Automatically classifies noise/artifacts (perhaps other basketballs) and filters them out.
 - **Super Resolution (Coming Soon)**: Smoothens video playback and increases video quality from HD to 4k with AI.
 
 ## Expected Metrics
