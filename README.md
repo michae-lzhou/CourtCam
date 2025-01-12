@@ -88,16 +88,17 @@ To analyze a basketball game video, follow these steps:
 
 ## Features
 
-- **Basketball Tracking**: Automatically detects and tracks basketballs in real-time using a YOLO-based object detection model.
-- **Frame Cropping**: Crops video frames around the detected basketballs for a more focused and engaging viewing experience.
-- **Video Processing**: Generates output videos with real-time tracking and enhanced frames.
+- **Basketball Tracking**: Automatically detects and tracks basketballs and players in real-time using a YOLO-based object detection model.
+- **Frame Cropping**: Crops video frames around the desired area for a more focused and engaging viewing experience.
+- **Smooth Panning**: Utilizes weighted averages and positional history to create a smooth panning experience for the user.
+- **Artifact Exclusion**: Automatically classifies noise/artifacts (perhaps other basketballs) and filters them out.
 - **Super Resolution (Coming Soon)**: Smoothens video playback and increases video quality from HD to 4k with AI.
 
 ## Expected Metrics
 
 ### Basketball Game Tracker Performance
 
-Please note that performance may vary due to limited training data (especially during free-throws and time-outs)
+Please note that performance may vary due to limited training data (especially during free throws and time-outs)
 
 ### Processing Device
 
@@ -117,10 +118,10 @@ Please note that performance may vary due to limited training data (especially d
 Huge shoutouts to these amazing resources on the niche problems I was trying to solve! (That you'll also likely run into if you want to do something similar)
 
 1. **[How to Detect Basketball Game using Deep Learning](https://www.youtube.com/watch?v=i8k8YP0oy00)**
-   - By Eran Feit, this is the amazing tutorial I started with to train my YOLO models! The annotation part with GroundingDINO saved me a lot of headache and late nights drawing my own bounding boxes.
+   - By Eran Feit, this is the amazing tutorial I started with to train my YOLO models! The annotation part with GroundingDINO saved me a lot of headaches and late nights drawing my own bounding boxes.
 
 2. **[How to Automatically Remove Fish-Eye(Wide Angle) Lens Distortion for Any Camera](https://www.youtube.com/watch?v=MAoQqhcKKAo)**
-   - By WalkWithMe, I didn't realize that iPhones already have built-in distortion removal when taking videos from ultra-wide lens, but this tutorial is extremely helpful for people using specialized recording devices that don't have this built-in functionality.
+   - By WalkWithMe, I didn't realize that iPhones already have built-in distortion removal when taking videos from ultra-wide lenses, but this tutorial is extremely helpful for people using specialized recording devices that don't have this built-in functionality.
 
 3. **[A simple way of creating a custom object detection model](https://towardsdatascience.com/chess-rolls-or-basketball-lets-create-a-custom-object-detection-model-ef53028eac7d)**
    - By Piotr Skalski, an end-to-end guide on building a custom object detection model with detailed steps and examples.
